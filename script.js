@@ -48,7 +48,6 @@ function setAlarm() {
 // Step 4 - Clear the Alarm
 function clearAlarm() {
   audio.pause();
-  if (alarmTimeout) {
-    alert("Alarm cleared");
-  }
+  alert("Alarm cleared");
+  
 }
