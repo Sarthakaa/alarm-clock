@@ -3,7 +3,7 @@ const display = document.getElementById("clock");
 const audio = new Audio("alarm_sound.mp3");
 audio.loop = true;
 let alarmTime = null;
-
+let alarmTimeout = null;
 
 // Step 2 - Activate/Display the clock
 function updateTime() {
@@ -48,6 +48,7 @@ function setAlarm() {
 // Step 4 - Clear the Alarm
 function clearAlarm() {
   audio.pause();
-  alert("Alarm cleared");
-  
+  if (alarmTimeout) {
+    alert("Alarm cleared");
+  }
 }
