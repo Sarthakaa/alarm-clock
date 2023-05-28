@@ -1,0 +1,71 @@
+
+body,
+html {
+margin: 0;
+padding: 0;
+background-color: #000000;
+}
+
+.container {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#clock {
+font-family: "Orbitron", sans-serif;
+font-size: 15vw;
+background-image: linear-gradient(
+    180deg,
+    rgb(70, 195, 24),
+    rgb(64, 110, 80),
+    rgb(62, 86, 67)
+);
+
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+}
+
+input {
+border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+font-size: 14px;
+padding: 10px 15px;
+}
+
+.controls {
+margin-top: 16px;
+}
+
+.button {
+font-weight: bold;
+border-radius: 5px;
+border: none;
+color: white;
+padding: 8px 20px;
+margin-left: 4px;
+cursor: pointer;
+font-size: 15px;
+}
+
+.set-alarm {
+background-color: grey;
+}
+
+.set-alarm:hover{
+    background-color: green;
+}
+
+.clear-alarm {
+background-color: #d3647a;
+}
+
+.clear-alarm:hover{
+    background-color: #d21c40;
+}
